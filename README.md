@@ -34,19 +34,25 @@ The **Research Paper Q&A Agent** is a full-stack AI tool that:
 research_agent/
 │
 ├── data/
+
 │ └── raw_papers/ # Downloaded PDFs
 │
 ├── embeddings/
+
 │ └── faiss_index/ # FAISS index from chunk embeddings
 │
 ├── utils/
+
 │ ├── fetch_papers.py # Arxiv paper search + metadata fetcher
+
 │ ├── parse_pdf.py # PDF loader and chunker
+
 │ ├── chunk_embed.py # FAISS embedding creation
+
 │ └── rag_agent.py # LangChain RAG pipeline + Q&A logic
 │
 ├── app.py # Streamlit frontend (UI logic)
-├── requirements.txt # All dependencies
+
 └── README.md # You're here!
 
 
@@ -77,13 +83,6 @@ research_agent/
 
 ---
 
-## 📸 Screenshots
-
-| PDF Fetch & Metadata                                | Question Answering Based on PDF                          |
-|-----------------------------------------------------|----------------------------------------------------------|
-| ![Fetch](./screenshots/download_view.png)           | ![QnA](./screenshots/qa_view.png)                        |
-
----
 
 🧪 Supported Ollama Models
 llama3
